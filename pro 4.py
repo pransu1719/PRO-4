@@ -14,8 +14,7 @@ while True:
     print("Step 1: Input Data")
 
     data = list(map(int, input(
-        "Enter data for a 1D array (separated by spaces): "
-    )))
+        "Enter data for a 1D array (separated by spaces): ").split())
 
     print("Data has been stored successfully!")
 
