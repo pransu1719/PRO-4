@@ -1,25 +1,24 @@
+ print("Welcome to the Data Analyzer and Transformer Program")   
+ print("1. Input Data")
+ print("2. Display Data Summary (Built-in Functions)") 
+ print("3. Calculate Factorial (Recursion)")
+ print("4. Filter Data by Threshold (Lambda Function)")
+ print("5. Sort Data")
+ print("6. Display Dataset Statistics (Return Multiple Values)")
+ print("7. Exit Program")
 
-  print("Welcome to the Data Analyzer and Transformer Program")   
-  print("1. Input Data")
-  print("2. Display Data Summary (Built-in Functions)") 
-  print("3. Calculate Factorial (Recursion)")
-  print("4. Filter Data by Threshold (Lambda Function)")
-  print("5. Sort Data")
-  print("6. Display Dataset Statistics (Return Multiple Values)")
-  print("7. Exit Program")
-
-  choice = int(input("Please enter your choice: "))
+ choice = int(input("Please enter your choice: "))
 
 
-  if choice == 1:
-     print("Step 1: Input Data")
+ if choice == 1:
+    print("Step 1: Input Data")
 
-     data = list(map(int, input( "Enter data for a 1D array (separated by spaces): ").split()))
+    data = list(map(int, input( "Enter data for a 1D array (separated by spaces): ").split()))
 
-     print("Data has been stored successfully!")
+    print("Data has been stored successfully!")
 
-  else:
-    print("Please select option 1.")
+ else:
+   print("Please select option 1.")
 
 # Step 2: Display Data Summary (Built-in Functions)
 
