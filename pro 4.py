@@ -1,4 +1,4 @@
-while True:
+
   print("Welcome to the Data Analyzer and Transformer Program")   
   print("1. Input Data")
   print("2. Display Data Summary (Built-in Functions)") 
