@@ -1,29 +1,16 @@
-print("Welcome to the Data Analyzer and Transformer Program")
-print()
-def fact(n):
-  if n==0:
-      return 1
-  else:
-      return n*fact(n-1)
-
 while True:
-    print("select an option:")
-    print()
-    
-    print("1. Input Data")
-    print("2. Display Data Summary (Built-in Functions)")
-    print("3. Calculate Factorial (Recursion)")
-    print("4. Filter Data by Threshold (Lambda Function)")
-    print("5. Sort Data")
-    print("6. Display Dataset Statistics (Return Multiple Values)")
-    print("7. Exit Program")
-    print(
+  print("Welcome to the Data Analyzer and Transformer Program"   '
+  print("1. Input Data")
+  print("2. Display Data Summary (Built-in Functions)") print("3. Calculate Factorial (Recursion)")
+  print("4. Filter Data by Threshold (Lambda Function)")
+  print("5. Sort Data")
+  print("6. Display Dataset Statistics (Return Multiple Values)")
+  print("7. Exit Program")
+
+  choice = int(input("Please enter your choice: "))
 
 
-    choice = int(input("Please enter your choice: "))
-    print()
-
-if choice == 1:
+ if choice == 1:
     print("Step 1: Input Data")
 
     data = list(map(int, input(
@@ -32,14 +19,13 @@ if choice == 1:
 
     print("Data has been stored successfully!")
 
-else:
+ else:
     print("Please select option 1.")
 
 # Step 2: Display Data Summary (Built-in Functions)
 
 data = [34, 12, 56, 78, 43, 21, 90]
 
-choice = int(input("Please enter your choice: "))
 
 print("Step 2: Display Data Summary (Built-in Functions)")
 print("\nData Summary:")
@@ -51,7 +37,7 @@ print("- Average value:", round(sum(data) / len(data), 2))
 
 # Step 3: Calculate Factorial (Recursion)
 
-choice = int(input("Please enter your choice: "))
+
 def factorial(n):
     if n == 0 or n == 1:
         return 1
@@ -66,8 +52,6 @@ print(f"Factorial of {num} is: {factorial(num)}")
 # Step 4: Filter Data by Threshold (Lambda Function)
 
 data = [12, 21, 34, 43, 56, 78, 90]
-
-choice = int(input("Please enter your choice: "))
 
 print("Step 4: Filter Data by Threshold (Lambda Function)")
 
@@ -85,12 +69,10 @@ else:
 # Step 5: Sort Data
 
 data = [56, 12, 90, 34, 21, 78, 43]
-choice = int(input("Please enter your choice: "))
 print("Choose sorting option:")
 print("1. Ascending")
 print("2. Descending")
 
-choice = int(input("\nEnter your choice: "))
 
 if choice == 1:
     sorted_data = sorted(data)
@@ -116,7 +98,6 @@ def dataset_statistics(numbers):
     average = total / len(numbers)
     return minimum, maximum, total, average
 
-choice = int(input("Please enter your choice: "))
 
 if choice == 6:
     min_val, max_val, total_val, avg_val = dataset_statistics(data)
@@ -131,6 +112,5 @@ else:
 
 # Step 7: Exit Program
 
-choice = int(input("Please enter your choice: "))
 
 print("Thank you for using the Data Analyzer and Transformer Program. Goodbye!")
